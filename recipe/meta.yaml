@@ -1,5 +1,5 @@
 {% set name = "aws-crt-cpp" %}
-{% set version = "0.13.5" %}
+{% set version = "0.13.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 6d02c3b8bd76d072881fa7928bbcddc3b0223a10591441c5f099e3cfe107efaf
+  sha256: d41b64fa50faf8d041494289320b43935502e8602a3d03b5367c8cf998206f2e
 
 build:
   number: 0
