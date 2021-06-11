@@ -29,6 +29,7 @@ requirements:
     - aws-c-io
     - aws-c-mqtt
     - aws-checksums
+    - aws-c-s3
 
 test:
   commands:
