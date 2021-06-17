@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 aws_c_auth:
 - 0.6.0
 aws_c_cal:
-- 0.5.10
+- 0.5.11
 aws_c_common:
 - 0.6.2
 aws_c_event_stream:
