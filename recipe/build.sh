@@ -14,6 +14,6 @@ cmake ${CMAKE_ARGS} -GNinja \
   ..
 ninja install
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" != "1" ]]; then
-  ctest -E HttpDownloadNoBackPressureHTTP2
+    ctest -E '(HttpDownloadNoBackPressureHTTP2)|(HttpDownloadNoBackPressureHTTP1_1)'
 fi
 popd
