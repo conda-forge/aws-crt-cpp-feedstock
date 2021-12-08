@@ -5,7 +5,7 @@ aws_c_auth:
 aws_c_cal:
 - 0.5.12
 aws_c_common:
-- 0.6.17
+- 0.6.18
 aws_c_event_stream:
 - 0.2.7
 aws_c_http:
@@ -35,7 +35,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '9'
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 target_platform:
 - linux-aarch64
 zip_keys:
