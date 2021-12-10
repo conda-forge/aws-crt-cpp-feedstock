@@ -4,5 +4,5 @@ __migrator:
   migration_number: 1
   automerge: true
 aws_c_s3:
-- 0.1.29
-migrator_ts: 1638511247.077352
+- 0.1.30
+migrator_ts: 1639098038.516592
