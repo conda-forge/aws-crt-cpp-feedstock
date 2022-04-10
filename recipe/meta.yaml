@@ -10,7 +10,7 @@ source:
   sha256: 695bd584e2cd0b445e3120add03bd3754db24265f66b13f6bed62d19133ec0eb
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-crt-cpp", max_pin="x.x.x") }}
 
