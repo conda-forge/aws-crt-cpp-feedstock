@@ -3,6 +3,6 @@ __migrator:
   kind: version
   migration_number: 1
   automerge: true
-aws_c_event_stream:
-- 0.2.9
-migrator_ts: 1653640614.3333936
+aws_c_mqtt:
+- 0.7.11
+migrator_ts: 1657019699.464467
