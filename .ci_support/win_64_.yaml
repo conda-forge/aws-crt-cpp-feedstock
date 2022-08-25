@@ -11,18 +11,18 @@ aws_c_http:
 aws_c_io:
 - 0.13.1
 aws_c_mqtt:
-- 0.7.11
+- 0.7.12
 aws_c_s3:
 - 0.1.46
 aws_checksums:
 - 0.1.12
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- vs2019
 target_platform:
 - win-64
