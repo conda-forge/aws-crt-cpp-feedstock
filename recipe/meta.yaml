@@ -21,14 +21,14 @@ requirements:
     - {{ compiler('cxx') }}
     - ninja
   host:
-    - aws-c-auth
-    - aws-c-cal
+    - aws-checksums
     - aws-c-common
+    - aws-c-cal
+    - aws-c-io
     - aws-c-event-stream
     - aws-c-http
-    - aws-c-io
+    - aws-c-auth
     - aws-c-mqtt
-    - aws-checksums
     - aws-c-s3
 
 test:
@@ -48,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - xhochy
+    - conda-forge/aws-sdk-cpp
