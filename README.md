@@ -1,11 +1,11 @@
-About aws-crt-cpp
-=================
+About aws-crt-cpp-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-crt-cpp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awslabs/aws-crt-cpp
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-crt-cpp-feedstock/blob/main/LICENSE.txt)
 
 Summary: C++ wrapper around the aws-c-* libraries. Provides Cross-Platform Transport Protocols and SSL/TLS implementations for C++.
 
