@@ -15,13 +15,13 @@ aws_c_io:
 aws_c_mqtt:
 - 0.8.6
 aws_c_s3:
-- 0.2.7
+- 0.2.8
 aws_checksums:
 - 0.1.14
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -29,7 +29,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
