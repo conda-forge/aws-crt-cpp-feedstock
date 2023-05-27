@@ -3,9 +3,9 @@ MACOSX_DEPLOYMENT_TARGET:
 aws_c_auth:
 - 0.6.27
 aws_c_cal:
-- 0.5.26
+- 0.5.27
 aws_c_common:
-- 0.8.19
+- 0.8.20
 aws_c_event_stream:
 - 0.2.20
 aws_c_http:
@@ -16,8 +16,8 @@ aws_c_mqtt:
 - 0.8.11
 aws_c_s3:
 - 0.3.0
-aws_checksums:
-- 0.1.14
+aws_c_sdkutils:
+- 0.1.10
 c_compiler:
 - clang
 c_compiler_version:
