@@ -22,7 +22,6 @@ requirements:
     - {{ compiler('cxx') }}
     - ninja
   host:
-    - aws-checksums
     - aws-c-common
     - aws-c-cal
     - aws-c-io
@@ -31,6 +30,7 @@ requirements:
     - aws-c-auth
     - aws-c-mqtt
     - aws-c-s3
+    - aws-c-sdkutils
 
 test:
   commands:
