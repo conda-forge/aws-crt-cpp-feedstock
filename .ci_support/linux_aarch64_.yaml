@@ -13,7 +13,7 @@ aws_c_http:
 aws_c_io:
 - 0.13.35
 aws_c_mqtt:
-- 0.9.7
+- 0.9.8
 aws_c_s3:
 - 0.3.18
 aws_c_sdkutils:
