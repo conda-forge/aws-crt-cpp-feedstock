@@ -3,6 +3,6 @@ __migrator:
   kind: version
   migration_number: 1
   automerge: true
-aws_c_sdkutils:
-- 0.1.13
-migrator_ts: 1702007020.439229
+aws_c_s3:
+- 0.4.4
+migrator_ts: 1702073157.981077
