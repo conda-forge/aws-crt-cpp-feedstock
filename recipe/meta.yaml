@@ -1,4 +1,4 @@
-{% set version = "0.26.0" %}
+{% set version = "0.26.1" %}
 
 package:
   name: aws-crt-cpp
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-crt-cpp/archive/v{{ version }}.tar.gz
-  sha256: c17b528b071fa0e95ff430d117c573dbab0079a9e5a0f627507ee04ef2e545b0
+  sha256: ae497f66a6894aada9fa09f4bc1a8edac859614108e0bd41cc44017eeb6f8598
   patches:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
 build:
-  number: 8
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-crt-cpp", max_pin="x.x.x") }}
 
