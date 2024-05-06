@@ -1,11 +1,11 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
+- '10.13'
 aws_c_auth:
 - 0.7.18
 aws_c_cal:
 - 0.6.11
 aws_c_common:
-- 0.9.15
+- 0.9.17
 aws_c_event_stream:
 - 0.4.2
 aws_c_http:
@@ -25,7 +25,7 @@ c_compiler_version:
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
-- '10.9'
+- '10.13'
 channel_sources:
 - conda-forge
 channel_targets:
