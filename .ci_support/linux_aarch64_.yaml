@@ -1,7 +1,7 @@
 BUILD:
 - aarch64-conda_cos7-linux-gnu
 aws_c_auth:
-- 0.7.29
+- 0.7.30
 aws_c_cal:
 - 0.7.4
 aws_c_common:
@@ -9,7 +9,7 @@ aws_c_common:
 aws_c_event_stream:
 - 0.4.3
 aws_c_http:
-- 0.8.8
+- 0.8.9
 aws_c_io:
 - 0.14.18
 aws_c_mqtt:
