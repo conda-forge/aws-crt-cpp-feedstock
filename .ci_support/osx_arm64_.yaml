@@ -19,7 +19,7 @@ aws_c_mqtt:
 aws_c_s3:
 - 0.7.9
 aws_c_sdkutils:
-- 0.2.2
+- 0.2.3
 c_compiler:
 - clang
 c_compiler_version:
