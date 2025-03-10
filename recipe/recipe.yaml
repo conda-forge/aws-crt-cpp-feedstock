@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-crt-cpp/archive/v${{ version }}.tar.gz
-  sha256: 05e5c52f76458039f1f4145b220a79b1e28cd102244f0006b572e7830480d5af
+  sha256: 4e920a5da67f77a4e2cbceb0f8d3a279f57888cde0abeae19b58bc8374d1cb3d
   patches:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
