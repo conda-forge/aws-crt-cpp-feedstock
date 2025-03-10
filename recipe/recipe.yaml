@@ -1,0 +1,59 @@
+schema_version: 1
+
+context:
+  version: 0.31.0
+
+package:
+  name: aws-crt-cpp
+  version: ${{ version }}
+
+source:
+  url: https://github.com/awslabs/aws-crt-cpp/archive/v${{ version }}.tar.gz
+  sha256: 4e920a5da67f77a4e2cbceb0f8d3a279f57888cde0abeae19b58bc8374d1cb3d
+  patches:
+    - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - ninja
+  host:
+    - aws-c-common
+    - aws-c-cal
+    - aws-c-io
+    - aws-c-event-stream
+    - aws-c-http
+    - aws-c-auth
+    - aws-c-mqtt
+    - aws-c-s3
+    - aws-c-sdkutils
+  run_exports:
+    - ${{ pin_subpackage("aws-crt-cpp", upper_bound="x.x.x") }}
+
+tests:
+  - script:
+      - if: unix
+        then: test -f $PREFIX/lib/libaws-c-io${SHLIB_EXT}
+      - if: unix
+        then: test -f $PREFIX/include/aws/io/io.h
+      - if: win
+        then: if not exist %LIBRARY_INC%\\aws\\io\\io.h exit 1
+      - if: win
+        then: if not exist %PREFIX%\\Library\\bin\\aws-c-io.dll exit 1
+
+about:
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: C++ wrapper around the aws-c-* libraries. Provides Cross-Platform Transport Protocols and SSL/TLS implementations for C++.
+  homepage: https://github.com/awslabs/aws-crt-cpp
+
+extra:
+  recipe-maintainers:
+    - xhochy
+    - conda-forge/aws-sdk-cpp
