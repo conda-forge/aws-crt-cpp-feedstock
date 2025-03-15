@@ -14,7 +14,7 @@ source:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
