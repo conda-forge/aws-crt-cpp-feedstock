@@ -14,7 +14,7 @@ source:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -39,14 +39,13 @@ requirements:
 tests:
   - script:
       - if: unix
-        then: test -f $PREFIX/lib/libaws-c-io${SHLIB_EXT}
-      - if: unix
-        then: test -f $PREFIX/include/aws/io/io.h
+        then:
+          - test -f $PREFIX/lib/libaws-c-io${SHLIB_EXT}
+          - test -f $PREFIX/include/aws/io/io.h
       - if: win
-        then: if not exist %LIBRARY_INC%\\aws\\io\\io.h exit 1
-      - if: win
-        then: if not exist %PREFIX%\\Library\\bin\\aws-c-io.dll exit 1
-
+        then:
+          - if not exist %LIBRARY_INC%\\aws\\io\\io.h exit 1
+          - if not exist %PREFIX%\\Library\\bin\\aws-c-io.dll exit 1
 about:
   license: Apache-2.0
   license_file: LICENSE
