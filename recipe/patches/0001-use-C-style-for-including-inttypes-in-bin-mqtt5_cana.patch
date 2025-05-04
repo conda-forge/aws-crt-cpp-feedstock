@@ -21,6 +21,3 @@ index 30116fe..e1d65cf 100644
  #include <iostream>
  
  #define AWS_MQTT5_CANARY_CLIENT_CREATION_SLEEP_TIME 10000000
--- 
-2.38.1.windows.1
-
