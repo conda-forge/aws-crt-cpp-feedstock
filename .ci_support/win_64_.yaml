@@ -9,7 +9,7 @@ aws_c_event_stream:
 aws_c_http:
 - 0.10.2
 aws_c_io:
-- 0.20.0
+- 0.20.1
 aws_c_mqtt:
 - 0.13.1
 aws_c_s3:
@@ -17,7 +17,7 @@ aws_c_s3:
 aws_c_sdkutils:
 - 0.2.4
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
@@ -25,6 +25,6 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2019
+- vs2022
 target_platform:
 - win-64
