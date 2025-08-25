@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.33.5"
+  version: "0.34.0"
 
 package:
   name: aws-crt-cpp
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-crt-cpp/archive/v${{ version }}.tar.gz
-  sha256: 0cdf169d43b2441ba9fe866f8bd13d8f2437b995a57a885131265df551489122
+  sha256: 159998cff5a52406eb486bf92989d2184dbf6d47d5ec2593b864625defac279b
   patches:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
