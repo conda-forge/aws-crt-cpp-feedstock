@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: C++ wrapper around the aws-c-* libraries. Provides Cross-Platform Transport Protocols and SSL/TLS implementations for C++.
 
+Development: https://github.com/awslabs/aws-crt-cpp
+
 Current build status
 ====================
 
