@@ -14,7 +14,7 @@ source:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -51,6 +51,7 @@ about:
   license_file: LICENSE
   summary: C++ wrapper around the aws-c-* libraries. Provides Cross-Platform Transport Protocols and SSL/TLS implementations for C++.
   homepage: https://github.com/awslabs/aws-crt-cpp
+  repository: https://github.com/awslabs/aws-crt-cpp
 
 extra:
   recipe-maintainers:
