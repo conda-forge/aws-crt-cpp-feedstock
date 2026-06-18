@@ -15,11 +15,11 @@ aws_c_http:
 aws_c_io:
 - 0.26.3
 aws_c_mqtt:
-- 0.15.2
+- 0.16.0
 aws_c_s3:
-- 0.12.5
+- 0.12.6
 aws_c_sdkutils:
-- 0.2.4
+- 0.2.5
 c_compiler:
 - clang
 c_compiler_version:
