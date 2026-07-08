@@ -3,7 +3,7 @@ aws_c_auth:
 aws_c_cal:
 - 0.9.14
 aws_c_common:
-- 0.14.0
+- 0.14.1
 aws_c_event_stream:
 - 0.7.1
 aws_c_http:
@@ -15,7 +15,7 @@ aws_c_mqtt:
 aws_c_s3:
 - 0.12.6
 aws_c_sdkutils:
-- 0.2.5
+- 0.2.7
 c_compiler:
 - gcc
 c_compiler_version:
