@@ -14,7 +14,7 @@ source:
     - patches/0001-use-C-style-for-including-inttypes-in-bin-mqtt5_cana.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -46,6 +46,22 @@ tests:
         then:
           - if not exist %LIBRARY_INC%\\aws\\io\\io.h exit 1
           - if not exist %PREFIX%\\Library\\bin\\aws-c-io.dll exit 1
+  - if: win and arm64
+    then:
+      requirements:
+        run:
+          - ${{ compiler('cxx') }}
+          - cmake
+      files:
+        recipe:
+          - CMakeLists.txt
+          - consumer.cpp
+      script:
+        - cmake -S . -B consumer-build -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"
+        - cmake --build consumer-build
+        - consumer-build\consumer.exe
+        - dumpbin /headers "%LIBRARY_BIN%\aws-crt-cpp.dll" | findstr /I /C:"AA64 machine (ARM64)"
+        - dumpbin /headers consumer-build\consumer.exe | findstr /I /C:"AA64 machine (ARM64)"
 about:
   license: Apache-2.0
   license_file: LICENSE
@@ -54,6 +70,7 @@ about:
   repository: https://github.com/awslabs/aws-crt-cpp
 
 extra:
+  feedstock-name: aws-crt-cpp
   recipe-maintainers:
     - xhochy
     - conda-forge/aws-sdk-cpp
