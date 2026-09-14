@@ -54,7 +54,6 @@ about:
   repository: https://github.com/awslabs/aws-crt-cpp
 
 extra:
-  feedstock-name: aws-crt-cpp
   recipe-maintainers:
     - xhochy
     - conda-forge/aws-sdk-cpp
